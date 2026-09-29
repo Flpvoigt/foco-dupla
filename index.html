@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101827" />
+    <title>Foco em Dupla</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="title">
+      <p class="eyebrow">Pomodoro colaborativo</p>
+      <h1 id="title">Foco em Dupla</h1>
+      <p id="status" class="status" aria-live="polite">Pronto para focar?</p>
+
+      <div id="timer" class="timer" role="timer" aria-label="25 minutos restantes">
+        25:00
+      </div>
+
+      <div class="presets" aria-label="Duração da sessão">
+        <button class="preset active" data-minutes="25" type="button">Foco 25 min</button>
+        <button class="preset" data-minutes="5" type="button">Pausa 5 min</button>
+      </div>
+
+      <div class="actions">
+        <button id="toggle" class="primary" type="button">Iniciar</button>
+        <button id="reset" class="secondary" type="button">Reiniciar</button>
+      </div>
+
+      <p class="sessions">
+        Sessões concluídas: <strong id="sessions">0</strong>
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
